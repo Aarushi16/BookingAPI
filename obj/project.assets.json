@@ -35,17 +35,6 @@
           "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.dll": {}
         }
       },
-      "Microsoft.Build.Tasks.Git/1.1.0-beta-20204-02": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.Build.Tasks.Git.props": {},
-          "build/Microsoft.Build.Tasks.Git.targets": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Microsoft.Build.Tasks.Git.props": {},
-          "buildMultiTargeting/Microsoft.Build.Tasks.Git.targets": {}
-        }
-      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -353,32 +342,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
-        }
-      },
-      "Microsoft.SourceLink.Common/1.1.0-beta-20204-02": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.SourceLink.Common.props": {},
-          "build/Microsoft.SourceLink.Common.targets": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Microsoft.SourceLink.Common.props": {},
-          "buildMultiTargeting/Microsoft.SourceLink.Common.targets": {}
-        }
-      },
-      "Microsoft.SourceLink.GitHub/1.1.0-beta-20204-02": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Build.Tasks.Git": "1.1.0-beta-20204-02",
-          "Microsoft.SourceLink.Common": "1.1.0-beta-20204-02"
-        },
-        "build": {
-          "build/Microsoft.SourceLink.GitHub.props": {},
-          "build/Microsoft.SourceLink.GitHub.targets": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Microsoft.SourceLink.GitHub.props": {},
-          "buildMultiTargeting/Microsoft.SourceLink.GitHub.targets": {}
         }
       },
       "Newtonsoft.Json/10.0.1": {
@@ -1217,58 +1180,13 @@
         "version.txt"
       ]
     },
-    "Microsoft.Build.Tasks.Git/1.1.0-beta-20204-02": {
-      "sha512": "T7mMbmgoT3XXKrXbLeEj6D9fQLZDmF/T8W5NQsrlcfQ24nOLrkr1Cst9cmI44zIH16rIo+4ws0tEqUN+Jw5Iag==",
-      "type": "package",
-      "path": "microsoft.build.tasks.git/1.1.0-beta-20204-02",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "build/Microsoft.Build.Tasks.Git.props",
-        "build/Microsoft.Build.Tasks.Git.targets",
-        "buildMultiTargeting/Microsoft.Build.Tasks.Git.props",
-        "buildMultiTargeting/Microsoft.Build.Tasks.Git.targets",
-        "microsoft.build.tasks.git.1.1.0-beta-20204-02.nupkg.sha512",
-        "microsoft.build.tasks.git.nuspec",
-        "tools/net461/Microsoft.Build.Tasks.Git.dll",
-        "tools/net461/System.Collections.Immutable.dll",
-        "tools/net461/cs/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/de/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/es/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/fr/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/it/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/ja/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/ko/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/pl/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/pt-BR/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/ru/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/tr/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/zh-Hans/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/net461/zh-Hant/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/Microsoft.Build.Tasks.Git.dll",
-        "tools/netcoreapp2.0/cs/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/de/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/es/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/fr/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/it/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/ja/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/ko/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/pl/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/pt-BR/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/ru/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/tr/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/zh-Hans/Microsoft.Build.Tasks.Git.resources.dll",
-        "tools/netcoreapp2.0/zh-Hant/Microsoft.Build.Tasks.Git.resources.dll"
-      ]
-    },
     "Microsoft.CSharp/4.3.0": {
       "sha512": "P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
       "type": "package",
       "path": "microsoft.csharp/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -1706,6 +1624,7 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -1729,97 +1648,6 @@
         "lib/netstandard2.0/Microsoft.OpenApi.xml",
         "microsoft.openapi.1.2.3.nupkg.sha512",
         "microsoft.openapi.nuspec"
-      ]
-    },
-    "Microsoft.SourceLink.Common/1.1.0-beta-20204-02": {
-      "sha512": "3tLuYVu7iPSUGVgSygxZnN4q6ZdXFbKd2A/1Zgva5i6VMoVXoTJwggKVZTGyemlWriziOwY76I5MZI+vnJ8ztA==",
-      "type": "package",
-      "path": "microsoft.sourcelink.common/1.1.0-beta-20204-02",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "build/InitializeSourceControlInformation.targets",
-        "build/Microsoft.SourceLink.Common.props",
-        "build/Microsoft.SourceLink.Common.targets",
-        "buildMultiTargeting/Microsoft.SourceLink.Common.props",
-        "buildMultiTargeting/Microsoft.SourceLink.Common.targets",
-        "microsoft.sourcelink.common.1.1.0-beta-20204-02.nupkg.sha512",
-        "microsoft.sourcelink.common.nuspec",
-        "tools/net461/Microsoft.SourceLink.Common.dll",
-        "tools/net461/cs/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/de/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/es/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/fr/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/it/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/ja/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/ko/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/pl/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/pt-BR/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/ru/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/tr/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/zh-Hans/Microsoft.SourceLink.Common.resources.dll",
-        "tools/net461/zh-Hant/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/Microsoft.SourceLink.Common.dll",
-        "tools/netcoreapp2.0/cs/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/de/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/es/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/fr/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/it/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/ja/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/ko/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/pl/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/pt-BR/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/ru/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/tr/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/zh-Hans/Microsoft.SourceLink.Common.resources.dll",
-        "tools/netcoreapp2.0/zh-Hant/Microsoft.SourceLink.Common.resources.dll"
-      ]
-    },
-    "Microsoft.SourceLink.GitHub/1.1.0-beta-20204-02": {
-      "sha512": "nVB0LiCn+q0eprqpQ9BeZ6xMdIobiRTwZlrvyAYDv4Zprek5BUHJ8usXUEtJlCTqQYF5HvLgvwf361jCkhmXCg==",
-      "type": "package",
-      "path": "microsoft.sourcelink.github/1.1.0-beta-20204-02",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "build/Microsoft.SourceLink.GitHub.props",
-        "build/Microsoft.SourceLink.GitHub.targets",
-        "buildMultiTargeting/Microsoft.SourceLink.GitHub.props",
-        "buildMultiTargeting/Microsoft.SourceLink.GitHub.targets",
-        "microsoft.sourcelink.github.1.1.0-beta-20204-02.nupkg.sha512",
-        "microsoft.sourcelink.github.nuspec",
-        "tools/net461/Microsoft.SourceLink.GitHub.dll",
-        "tools/net461/cs/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/de/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/es/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/fr/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/it/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/ja/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/ko/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/pl/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/pt-BR/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/ru/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/tr/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/zh-Hans/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/net461/zh-Hant/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/Microsoft.SourceLink.GitHub.dll",
-        "tools/netcoreapp2.0/cs/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/de/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/es/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/fr/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/it/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/ja/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/ko/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/pl/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/pt-BR/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/ru/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/tr/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/zh-Hans/Microsoft.SourceLink.GitHub.resources.dll",
-        "tools/netcoreapp2.0/zh-Hant/Microsoft.SourceLink.GitHub.resources.dll"
       ]
     },
     "Newtonsoft.Json/10.0.1": {
@@ -1936,6 +1764,7 @@
       "path": "system.collections/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2029,6 +1858,7 @@
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2067,6 +1897,7 @@
       "path": "system.collections.specialized/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2105,6 +1936,7 @@
       "path": "system.componentmodel/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2252,6 +2084,7 @@
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2343,6 +2176,7 @@
       "path": "system.diagnostics.debug/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2436,6 +2270,7 @@
       "path": "system.diagnostics.tools/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2492,6 +2327,7 @@
       "path": "system.dynamic.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2562,6 +2398,7 @@
       "path": "system.globalization/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2629,6 +2466,7 @@
       "path": "system.globalization.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2690,6 +2528,7 @@
       "path": "system.io/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2770,6 +2609,7 @@
       "path": "system.io.filesystem/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2807,6 +2647,7 @@
       "path": "system.io.filesystem.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2845,6 +2686,7 @@
       "path": "system.linq/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2916,6 +2758,7 @@
       "path": "system.linq.expressions/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2999,6 +2842,7 @@
       "path": "system.objectmodel/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3068,6 +2912,7 @@
       "path": "system.reflection/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3148,6 +2993,7 @@
       "path": "system.reflection.emit/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3273,6 +3119,7 @@
       "path": "system.reflection.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3329,6 +3176,7 @@
       "path": "system.reflection.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3439,6 +3287,7 @@
       "path": "system.resources.resourcemanager/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3495,6 +3344,7 @@
       "path": "system.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3586,6 +3436,7 @@
       "path": "system.runtime.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3666,6 +3517,7 @@
       "path": "system.runtime.handles/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3703,6 +3555,7 @@
       "path": "system.runtime.interopservices/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3795,6 +3648,7 @@
       "path": "system.runtime.numerics/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3851,6 +3705,7 @@
       "path": "system.runtime.serialization.formatters/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3879,6 +3734,7 @@
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4014,6 +3870,7 @@
       "path": "system.text.encoding/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4081,6 +3938,7 @@
       "path": "system.text.encoding.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4148,6 +4006,7 @@
       "path": "system.text.regularexpressions/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4231,6 +4090,7 @@
       "path": "system.threading/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4301,6 +4161,7 @@
       "path": "system.threading.tasks/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4368,6 +4229,7 @@
       "path": "system.threading.tasks.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
@@ -4384,6 +4246,7 @@
       "path": "system.xml.readerwriter/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4455,6 +4318,7 @@
       "path": "system.xml.xdocument/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4563,28 +4427,23 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.26",
       "Microsoft.EntityFrameworkCore >= 3.1.26",
       "Microsoft.EntityFrameworkCore.InMemory >= 3.1.26",
-      "Microsoft.SourceLink.GitHub >= 1.1.0-beta-20204-02",
       "Swashbuckle.AspNetCore >= 6.3.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Saad Shamim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\MFPE\\Aarushi Full Project\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Saad Shamim\\source\\repos\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj",
       "projectName": "BookingAPI",
-      "projectPath": "C:\\Users\\hp\\Desktop\\MFPE\\Aarushi Full Project\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\MFPE\\Aarushi Full Project\\VehicleDriverAccountBook\\BookingAPI\\obj\\",
+      "projectPath": "C:\\Users\\Saad Shamim\\source\\repos\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj",
+      "packagesPath": "C:\\Users\\Saad Shamim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Saad Shamim\\source\\repos\\VehicleDriverAccountBook\\BookingAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Saad Shamim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4622,12 +4481,6 @@
             "target": "Package",
             "version": "[3.1.26, )"
           },
-          "Microsoft.SourceLink.GitHub": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[1.1.0-beta-20204-02, )"
-          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.3.1, )"
@@ -4643,6 +4496,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.26, 3.1.26]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4651,7 +4510,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.420\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

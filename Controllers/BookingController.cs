@@ -24,11 +24,9 @@ namespace BookingAPI.Controllers
         public IActionResult GetAllBookings()
         {
             //var accessToken = Request.Headers[HeaderNames.Authorization].ToString();
-            BookingResponse response = new BookingResponse
-            {
-                IsSuccess = true,
-                Bookings = _bookingService.GetAllBookings()
-            };
+            BookingResponse response = new BookingResponse();
+            response.IsSuccess = true;
+            response.Bookings = _bookingService.GetAllBookings();
 
             return Ok(response);
         }
@@ -36,11 +34,9 @@ namespace BookingAPI.Controllers
         [HttpGet]
         public IActionResult GetBookingsByDateTime(DateTime start, DateTime end)
         {
-            BookingResponse response = new BookingResponse
-            {
-                IsSuccess = true,
-                Bookings = _bookingService.GetBookingsByDateTime(start, end)
-            };
+            BookingResponse response = new BookingResponse();
+            response.IsSuccess = true;
+            response.Bookings = _bookingService.GetBookingsByDateTime(start, end);
 
             return Ok(response);
         }
@@ -48,15 +44,9 @@ namespace BookingAPI.Controllers
         [HttpGet]
         public IActionResult GetBookingById(int bookingId)
         {
-            GetBookingByIdResponse getBookingByIdResponse3 = new GetBookingByIdResponse
-            {
-                IsSuccess = true,
-                Booking = _bookingService.GetBookingById(bookingId)
-            };
-            GetBookingByIdResponse getBookingByIdResponse2 = getBookingByIdResponse3;
-            GetBookingByIdResponse getBookingByIdResponse1 = getBookingByIdResponse2;
-            GetBookingByIdResponse getBookingByIdResponse = getBookingByIdResponse1;
-            GetBookingByIdResponse response = getBookingByIdResponse;
+            GetBookingByIdResponse response = new GetBookingByIdResponse();
+            response.IsSuccess = true;
+            response.Booking = _bookingService.GetBookingById(bookingId);
 
             return Ok(response);
         }
@@ -64,11 +54,8 @@ namespace BookingAPI.Controllers
         [HttpPost]
         public IActionResult AddBooking(Booking booking)
         {
-            ResponseStatus responseStatus = new ResponseStatus
-            {
-                IsSuccess = _bookingService.AddBooking(booking)
-            };
-            ResponseStatus response = responseStatus;
+            ResponseStatus response = new ResponseStatus();
+            response.IsSuccess = _bookingService.AddBooking(booking);
 
             return Ok(response);
         }
@@ -76,10 +63,8 @@ namespace BookingAPI.Controllers
         [HttpPut]
         public IActionResult UpdateBooking(Booking booking)
         {
-            ResponseStatus response = new ResponseStatus
-            {
-                IsSuccess = _bookingService.UpdateBooking(booking)
-            };
+            ResponseStatus response = new ResponseStatus();
+            response.IsSuccess = _bookingService.UpdateBooking(booking);
 
             return Ok(response);
         }

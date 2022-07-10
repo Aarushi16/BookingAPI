@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Desktop\\MFPE\\Aarushi Full Project\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj": {}
+    "C:\\Users\\Saad Shamim\\source\\repos\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Desktop\\MFPE\\Aarushi Full Project\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj": {
+    "C:\\Users\\Saad Shamim\\source\\repos\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Desktop\\MFPE\\Aarushi Full Project\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Saad Shamim\\source\\repos\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj",
         "projectName": "BookingAPI",
-        "projectPath": "C:\\Users\\hp\\Desktop\\MFPE\\Aarushi Full Project\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Desktop\\MFPE\\Aarushi Full Project\\VehicleDriverAccountBook\\BookingAPI\\obj\\",
+        "projectPath": "C:\\Users\\Saad Shamim\\source\\repos\\VehicleDriverAccountBook\\BookingAPI\\BookingAPI.csproj",
+        "packagesPath": "C:\\Users\\Saad Shamim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Saad Shamim\\source\\repos\\VehicleDriverAccountBook\\BookingAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Saad Shamim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -52,12 +51,6 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[3.1.26, )"
-            },
-            "Microsoft.SourceLink.GitHub": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.1.0-beta-20204-02, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -74,6 +67,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.26, 3.1.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -82,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.420\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
